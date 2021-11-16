@@ -12,8 +12,8 @@ from pathlib import Path
 
 optitrack_topic = '/mocap_node/Robot_1/pose'
 force_topic = '/ni_daq_data'
-source_dir = 'D:/OneDrive - Arizona State University/Documents/ASU/Yuhao_research/SCRAM/shape_propagation/robosoft2022/ros_record/LR_record_1114_newplate'
-aim_dir = 'D:/OneDrive - Arizona State University/Documents/ASU/Yuhao_research/SCRAM/shape_propagation/robosoft2022/ros_record/LR_record_1114_newplate_processed'
+source_dir = 'PATH TO SOURCE DIRECTORY'
+aim_dir = 'PATH TO DESTINATION DIRECTORY'
 i = 1
 
 if os.path.isdir(source_dir):
@@ -27,7 +27,7 @@ if os.path.isdir(aim_dir):
 else:
     print('Aim directory not found.')
     os.mkdir(aim_dir)
-    print('Successfullt made Aim directory')
+    print('Successfully created Aim directory')
     
 for file in os.listdir(source_dir):
     if file.endswith(".bag"): 
