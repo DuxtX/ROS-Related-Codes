@@ -92,7 +92,6 @@ daq_calibration_task.close()
 print("Calibration finished")
 timestr = time.strftime("%Y%m%d-%H%M%S")
 Name = 'force_plate_calibration{}'.format(timestr)
-#Name = 'force_plate_calibration_200_4'
 Name += '.csv'
 csv.write(Name, daq_force)
 
@@ -108,7 +107,6 @@ daq_acquisition()
 #     print('Sending message...')
 #     time.sleep(1)
 
-# try:
 print("Data Streaming started")
 daq_read_task.start()
 
