@@ -5,7 +5,6 @@ Created on Fri Mar 27 08:36:13 2020
 @author: danaukes
 """
 
-import numpy
 import numpy as np
 import nidaqmx
 from nidaqmx.stream_readers import AnalogMultiChannelReader
